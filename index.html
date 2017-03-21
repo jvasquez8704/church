@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IDP</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <nav class="red darken-1">    
+            <div class="nav-wrapper">
+                <a class="brand-logo"><img class="responsive-img" id="logo" src="img/logo_.png"/></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="familia.html">M. Familia</a></li>
+                    <li><a href="jovenes.html">M. Jovenes</a></li>
+                    <li><a href="cabelleros.html">M. Caballeros</a></li>
+                    <li><a href="damas.html">M. Damas</a></li>
+                    <li><a href="ninos.html">M. Niños</a></li>
+                    <li><a href="alabanza.html">M. Alabanza</a></li>
+                    <li><a href="dicipulado.html">M. Dicipulado</a></li>
+                    <li><a href="signin.html">Registrarse</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>  
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/office.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Titulo de la predica 1<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Ir hacia el mensaje 1</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Titulo de la predica 1<i class="material-icons right">close</i></span>
+                    <p>Breve descripcion del mensaje de predica, puede incluir los versiculo y la estructura basica del mensaje, en el caso que se quisiera  ver un mejor detalle de todo el mensaje se puede hacer click en el enlace del card 1.</p>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/sample-1.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Titulo de la predica 2<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Ir hacia el mensaje 2</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Titulo de la predica 2<i class="material-icons right">close</i></span>
+                    <p>Breve descripcion del mensaje de predica, puede incluir los versiculo y la estructura basica del mensaje, en el caso que se quisiera  ver un mejor detalle de todo el mensaje se puede hacer click en el enlace del card 2.</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            $(".button-collapse").sideNav();
+        </script>   
+    </body>
+</html>
