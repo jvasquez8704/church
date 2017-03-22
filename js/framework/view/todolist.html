@@ -1,0 +1,15 @@
+<ul>
+    <li ng-repeat="actividad in todo">
+        {{actividad.description}}
+        {{actividad.fecha | date: 'short'}}
+    </li>
+    <br/>
+
+    <form ng-submit="addActv()">
+        <input type="text" ng-model="newActv.description"/>
+        <input type="datetime-local" ng-model="newActv.fecha"/>
+        <input type="submit" value="Guardar actividad"/>
+    </form>
+    <!--<button ng-click="todo = []">Limpiar</button>-->
+    <button ng-click="cleanActv()">Limpiar</button>
+</ul>
