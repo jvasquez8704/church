@@ -2,29 +2,49 @@
  * Created by i7 on 21/03/2017.
  */
 angular.module("AppChurch", ['LocalStorageModule','ngRoute'])
-.config(function($routeProvider){
-        $routeProvider
-            .when('/',{
-                controller:'loginController',
-                templateUrl:'js/framework/view/home.html'
-            })
-            .when('/login',{
-                controller:'loginController',
-                templateUrl:'js/framework/view/login.html'
-            })
-            .when('/signin',{
-                controller:'loginController',
-                templateUrl:'js/framework/view/signin.html'
-            })
-            .when('/home',{
-                controller:'loginController',
-                templateUrl:'js/framework/view/home.html'
-            })
-            .when('/todolist',{
-                controller:'todoController',
-                templateUrl:'js/framework/view/todolist.html'
-            })
+    .config(function($routeProvider){
+    $routeProvider
+        .when('/',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/home.html'
     })
+        .when('/login',{
+        controller:'todoController',
+        templateUrl:'js/framework/view/todolist.html'
+    })
+        .when('/signin',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/signin.html'
+    })
+        .when('/praise',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/alabanza/praise.html'
+    })
+        .when('/men',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/caballeros/men.html'                
+    })
+        .when('/women',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/damas/women.html'
+    }) 
+        .when('/disciplehood',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/discipulado/disciplehood.html'
+    })
+        .when('/family',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/familia/family.html'
+    })    
+        .when('/youngers',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/jovenes/youngers.html'
+    })    
+        .when('/children',{
+        controller:'loginController',
+        templateUrl:'js/framework/view/ninos/children.html'
+    })
+})
     .controller("loginController", function ($scope, localStorageService) {
 
-    });
+});
