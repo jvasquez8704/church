@@ -4,3 +4,20 @@
 .wrapper{
     padding: 3%;
 }
+
+/*Sobrescribiendo los estilos del slider de materialize for mobile*/
+.slider{
+    height: 245px !important;
+}
+.slides{
+    height: 215px !important;
+}
+
+.slider .indicators .indicator-item {
+    height: 10px;
+    width: 10px;
+   /* margin: 0 25px;*/
+}
+.slider .indicators .indicator-item.active{
+        background-color: #e53935;
+}

@@ -44,7 +44,6 @@ angular.module("AppChurch", ['LocalStorageModule','ngRoute'])
         controller:'loginController',
         templateUrl:'js/framework/view/ninos/children.html'
     })
-})
-    .controller("loginController", function ($scope, localStorageService) {
-
+}).controller("loginController", function ($scope, localStorageService) {
+ $('.slider').slider();
 });

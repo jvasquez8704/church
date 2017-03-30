@@ -34,53 +34,28 @@
                     <li><a href="#!/login">Iniciar Sesión</a></li>
                 </ul>
             </div>
-        </nav> 
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="img/reflexiones-y-mensajes-cristianos-cortos.jpg"> <!-- random image -->
-                    <div class="caption center-align">
-                        <!--<h3>This is our big Tagline!</h3>
-<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>-->
-                    </div>
-                </li>
-                <li>
-                    <img src="img/disciplehood.jpg"> <!-- random image -->
-                    <div class="caption left-align">
-                        <h3>Nuestro anhelo y meta</h3>
-                        <h5 class="light grey-text text-lighten-3">Ser discipulos del maestro.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/disciplehood3.jpg"> <!-- random image -->
-                    <div class="caption right-align">
-                        <h3>El estudio de su palabra</h3>
-                        <h5 class="light grey-text text-lighten-3">Es nuestra labor.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slide5.jpg"> <!-- random image -->
-                    <div class="caption center-align">
-                        <h3>Cristo te ama !</h3>
-                        <h5 class="light grey-text text-lighten-3">El espera que le des tu corazón.</h5>
-                    </div>
-                </li>
-</ul>
-        </div>
+        </nav>
+        <div></div>         
         <div ng-view></div>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript">
-            //for menu
+           // "use strict";
+            $(document).ready(function(){
+                //for menu
             $(".button-collapse").sideNav(); 
             //for carousel
-            $('.slider').slider();
+           var ab;
             $(".side-nav li a").click(function(){
-                $(".slider").hide();
+                
+               var a = $(this).attr('href');
+                ab = $("body div").trigger('click',function(){
+                       console.log('ahi esta');
+                   }); 
+                console.log(ab);
+                console.log(a);
             });
-            $("#logo").click(function(){
-                $(".slider").show();
-            });          
+            });                     
         </script>
     </body>
 </html>
